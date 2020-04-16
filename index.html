@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>REGISTER</title>
+	<style>
+		h1 {
+			font-size: 50px;
+			color:black;
+			background-color: teal;
+			margin: 0px;
+			text-align: center;
+			cursor: pointer;
+		}
+		.footer{
+			font-size: 30px;
+			background-color: rgb(255, 255, 255);
+			margin: 2px;
+			color: rgb(17, 8, 68);
+			text-align: left;
+		}
+		.button{
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			font-size: 20px;
+			display: inline-block;
+			margin-left: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1>PERSONAL INFORMATION</h1><br><br>
+	<div class="footer">
+		username:&nbsp;<input type="text" placeholder="ex:abc" name="name" required><br> 
+		password:&nbsp;<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}" title="Password should contain minimum of 8 letters and maximum of 20 letters and use one uppercase letter and one lowercase letter and one number" placeholder="ex:-****" name="reg2" required><br>
+		gender:&nbsp;&nbsp;<input type="radio" value="male" checked>male
+		<input type="radio" value="female">female
+		<input type="radio" value="other">others <br>
+		dob:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date"><br><br>
+		address:&nbsp;<textarea name="address" rows="5" cols="15"></textarea><br>
+		email:&nbsp;&nbsp;&nbsp;&nbsp;<input type="email"  pattern="[a-z 0-9]+@gmail\.com" title="Check your email" placeholder="ex:-example@gmail.com" required><br>
+		mobile:&nbsp;&nbsp;<input type="tel" pattern="[0-9]{10}" title="Check your number" placeholder="ex:-9052617073"  required><br> 
+		languages known:&nbsp;<select id="languages" >
+		<option value="C">C</option>
+		<option value="CPP">CPP</option>
+		<option value="PYTHON">PYTHON</option>
+		<option value="JAVA">JAVA</option>
+		</select><br><br> 
+	</div>
+		<div class="button">
+		<input type="button" value="resgister" name="register">
+		<input type="button" value="login">
+		</div>
+</body>
