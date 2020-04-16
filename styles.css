@@ -1,0 +1,39 @@
+.body {
+	cursor:alias;
+    background-image: url("10.JPEG");
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-position:fixed;
+	background-size: 1360px 700px;
+}
+.text-line {
+    background-color:transparent;
+    color: black;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid black 1px;
+    padding: 3px 10px;
+    maxlength="20;
+    minlength="6";
+}
+.title{
+	color:black;
+	font-size:50px;
+	margin-top:60px;
+	margin-left:20px;
+}
+.button {
+	background-color:white;
+	border:none;
+	color:black;
+	padding: 15px 15px;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:16px;
+	cursor:pointer;
+	border-radius:30%;
+}
