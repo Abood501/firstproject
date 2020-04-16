@@ -1,57 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>REGISTER</title>
-	<style>
-		h1 {
-			font-size: 50px;
-			color:black;
-			background-color: teal;
-			margin: 0px;
-			text-align: center;
-			cursor: pointer;
-		}
-		.footer{
-			font-size: 30px;
-			background-color: rgb(255, 255, 255);
-			margin: 2px;
-			color: rgb(17, 8, 68);
-			text-align: left;
-		}
-		.button{
-			border: none;
-			color: white;
-			padding: 15px 32px;
-			text-align: center;
-			font-size: 20px;
-			display: inline-block;
-			margin-left: 5px;
-		}
-	</style>
+<title>registration page</title>
+<style>
+body {
+	cursor:alias;
+    background-image: url("10.JPEG");
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-position:fixed;
+	background-size: 1360px 700px;
+}
+.text-line {
+    background-color:transparent;
+    color: black;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid black 1px;
+    padding: 3px 10px;
+    maxlength="20;
+    minlength="6";
+}
+.title{
+	color:black;
+	font-size:50px;
+	margin-top:60px;
+	margin-left:20px;
+}
+.button {
+	background-color:white;
+	border:none;
+	color:black;
+	padding: 15px 15px;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:16px;
+	cursor:pointer;
+	border-radius:30%;
+}
+</style>
 </head>
-<body>
-	<h1>PERSONAL INFORMATION</h1><br><br>
-	<div class="footer">
-		username:&nbsp;<input type="text" placeholder="ex:abc" name="name" required><br> 
-		password:&nbsp;<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}" title="Password should contain minimum of 8 letters and maximum of 20 letters and use one uppercase letter and one lowercase letter and one number" placeholder="ex:-****" name="reg2" required><br>
-		gender:&nbsp;&nbsp;<input type="radio" value="male" checked>male
-		<input type="radio" value="female">female
-		<input type="radio" value="other">others <br>
-		dob:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date"><br><br>
-		address:&nbsp;<textarea name="address" rows="5" cols="15"></textarea><br>
-		email:&nbsp;&nbsp;&nbsp;&nbsp;<input type="email"  pattern="[a-z 0-9]+@gmail\.com" title="Check your email" placeholder="ex:-example@gmail.com" required><br>
-		mobile:&nbsp;&nbsp;<input type="tel" pattern="[0-9]{10}" title="Check your number" placeholder="ex:-9052617073"  required><br> 
-		languages known:&nbsp;<select id="languages" >
-		<option value="C">C</option>
-		<option value="CPP">CPP</option>
-		<option value="PYTHON">PYTHON</option>
-		<option value="JAVA">JAVA</option>
-		</select><br><br> 
-	</div>
-		<div class="button">
-		<input type="button" value="resgister" name="register">
-		<input type="button" value="login">
-		</div>
+<body class="body">
+<span class="title">talk is cheap,show me the code <br>and prove yourself</span>
+<div style="margin-left:1000px;margin-top:-110px;position:fixed">
+<h1>Registeration form</h1><br>
+Name:&nbsp;<br>
+<input class="text-line" placeholder="ex:-ramesh" type="text" pattern="[A-Za-z]{6,20}"><br><br>
+password:&nbsp;<br>
+<input class="text-line" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}" placeholder="ex:-****" name="reg2"><br><br>
+confirm password:&nbsp;<br>
+<input class="text-line" type="password" patther="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}" placeholder="ex:-****" name="cpwd"><br><br>
+mobile:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<input class="text-line" type="tel" pattern="[0-9]{10}" placeholder="ex:9052617073" name="reg3"><br><br>
+gender:&nbsp;<br>
+<input type="radio" name="gender" value="male" checked>male
+&nbsp;<input type="radio" name="gender" value="female">female
+&nbsp;<input type="radio" name="gender" value="other">other<br><br>
+E-Mail:<br>
+<input class="text-line" type="email"  pattern="+@gmail.com{12,30}" placeholder="ex:-example@gmail.com" name="reg4"><br><br>
+languages:&nbsp;<input type="checkbox" name="langauge1" value="C">
+<label for="langauge1">C</label>
+<input type="checkbox" name="lang2" value="C++">
+<label for="lang2">C++</label>
+<input type="checkbox" name="lang3" value="JAVA">
+<label for="lang3">JAVA</label>
+<input type="checkbox" name="lang4" value="PYTHON">
+<label for="lang4">PYTHON</label><br><br>
+DOB:&nbsp;
+<input class="text-line" type="date" placeholder="ex:-2000-12-12" name="reg5"><br>
+<input class="button" type="submit" style="margin-left:30px;margin-top:20px" value="register">&nbsp;&nbsp;&nbsp;&nbsp;
+<input class="button" type="reset" value="reset">
+</div>
 </body>
+</html>
