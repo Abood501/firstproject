@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>registration page</title>
-<link rel="stylesheet" type="text/css" href="styles.css"
+<title>Registration Page</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body class="body">
 <span class="title">talk is cheap,show me the code <br>and prove yourself</span>
-<div style="margin-left:1000px;margin-top:-110px;position:fixed">
-<h1>Registeration form</h1><br>
-Name:&nbsp;<br>
-<input class="text-line" placeholder="ex:-ramesh" type="text"><br><br>
-password:&nbsp;<br>
-<input class="text-line" type="password" placeholder="ex:-****" name="reg2"><br><br>
-confirm password:&nbsp;<br>
-<input class="text-line" type="password" placeholder="ex:-****" name="cpwd"><br><br>
-mobile:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-<input class="text-line" type="tel" placeholder="ex:9052617073" name="reg3"><br><br>
-gender:&nbsp;<br>
-<input type="radio" name="gender" value="male" checked>male
-&nbsp;<input type="radio" name="gender" value="female">female
-&nbsp;<input type="radio" name="gender" value="other">other<br><br>
-E-Mail:<br>
-<input class="text-line" type="email" placeholder="ex:-example@gmail.com" name="reg4"><br><br>
-languages:&nbsp;<input type="checkbox" name="langauge1" value="C">
-<label for="langauge1">C</label>
-<input type="checkbox" name="lang2" value="C++">
-<label for="lang2">C++</label>
-<input type="checkbox" name="lang3" value="JAVA">
-<label for="lang3">JAVA</label>
-<input type="checkbox" name="lang4" value="PYTHON">
-<label for="lang4">PYTHON</label><br><br>
-DOB:&nbsp;
-<input class="text-line" type="date" placeholder="ex:-2000-12-12" name="reg5"><br>
-<input class="button" type="submit" style="margin-left:30px;margin-top:20px" value="register">&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="alignment">
+<h1>Registeration Form</h1>
+<div class="text-line">
+    <label for="name">Username</label>
+    <input  type="text" id="name" placeholder="*ramesh">
+</div>
+<div class="text-line">
+    <label for="password">password</label>
+    <input type="password" id="password" placeholder="ex:-****" >
+</div>
+<div class="text-line">
+    <label for="mobile">mobile</label>
+    <input type="number" id="mobile" placeholder="ex:9052617074">
+</div>
+<div class="text-line">
+    <label for="Gender">Gender</label>
+    <input type="radio" name="gender" value="male" checked>male
+<input type="radio" name="gender" value="female">female
+<input type="radio" name="gender" value="other">other
+</div>
+<div class="text-line">
+    <label for="email" >E-mail</label>
+    <input type="email" id="email"placeholder="example@gmail.com">
+</div>
+<div class="text-line">
+    <label for="checkboc">langauges</label>
+    <input type="checkbox" name="langauge1" value="C">
+    <label for="langauge1">C</label>
+    <input type="checkbox" name="lang2" value="C++">
+    <label for="lang2">C++</label>
+    <input type="checkbox" name="lang3" value="JAVA">
+    <label for="lang3">JAVA</label>
+    <input type="checkbox" name="lang4" value="PYTHON">
+    <label for="lang4">PYTHON</label>
+</div>
+<div class="text-line">
+    <label for="date">Date</label>
+    <input type="date" id="date">
+</div>
+<input class="button" type="submit" value="register">
 <input class="button" type="reset" value="reset">
 </div>
 </body>
