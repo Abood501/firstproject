@@ -1,14 +1,16 @@
 .body {
 	cursor:alias;
-    background-image: url("10.JPEG");
+    background-image: url("images/10.jpeg");
 	background-attachment:fixed;
 	background-repeat:no-repeat;
 	background-position:fixed;
 	background-size: 1360px 700px;
 }
 .text-line {
-	text-align: center;
-    background-color:transparent;
+	text-align: left;
+	display: inline-block;
+	background-color:transparent;
+	font-size: initial;
 	color:black;
     outline: none;
     outline-style: none;
@@ -16,13 +18,11 @@
     border-left: none;
     border-right: none;
     padding: 5px 15px;
-    maxlength="20;
-    minlength="6";
 }
 .title{
 	color:black;
 	font-size:50px;
-	margin-top:60px;
+	margin-top:30px;
 	margin-left:20px;
 }
 .button {
@@ -35,13 +35,16 @@
 	display:inline-block;
 	font-size:16px;
 	cursor:pointer;
-	border-radius:30%;
-	margin-left:30px; 
-	margin-top:20px
+	border-radius:20%;
+	margin-left:50px; 
+	margin-top:20px;
+	display: inline-block;
 }
 .alignment
 {
 	margin-left:1000px;
-	margin-top:1000;
+	margin-top:-100px;
 	position:fixed;
 }
+
+
