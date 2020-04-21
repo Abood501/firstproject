@@ -45,6 +45,8 @@
 	margin-left:1000px;
 	margin-top:-100px;
 	position:fixed;
+	border: 1px transparent;
+	padding: 1px;
 }
 
 
