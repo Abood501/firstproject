@@ -1,9 +1,11 @@
-@media(min-width: 748px){
+@media(min-width: 400px){
 
     .container-1 div{
-        border: 1px lightblue solid;
+        flex-direction: column;
+        font-size: 20px;
+        border: 0px lightblue solid;
         padding: 14px;
-        background-color: lightblue;
+        background-color: crimson;
         align-content: center;
         text-align: center;
     }
@@ -22,6 +24,6 @@
     .container{
         display: flex;
         justify-content: center;
-        background-image: url("images/11.jpeg");
+        background-color: teal;
     }
 }
