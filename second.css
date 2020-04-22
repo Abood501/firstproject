@@ -1,9 +1,9 @@
-@media(min-width: 400px){
+@media(min-width: 450px){
 
     .container-1 div{
         flex-direction: column;
         font-size: 20px;
-        border: 0px lightblue solid;
+        border: 0px black;
         padding: 10px;
         background-color: lightseagreen;
         align-content: center;
@@ -17,7 +17,7 @@
         outline: none;
         outline-style: none;
         border-top: none;
-        border-left: 5px;
+        border-left: 10px;
         border-right: none;
         padding: 5px 15px;
     }
@@ -25,6 +25,8 @@
         display: flex;
         justify-content: center;
         background-color: teal;
+        margin:center;
+        box-sizing: border-box;
     }
     .button{
         font-size: 20px;
@@ -32,5 +34,8 @@
         display: inline-block ;
         margin:15px;
         border-radius: 15%;
+    }
+    .body{
+        background-color: deeppink;
     }
 }
